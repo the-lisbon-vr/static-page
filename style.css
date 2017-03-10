@@ -23,6 +23,10 @@ html{
   width: 100%;
   background:#333;
   padding: 25px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 
@@ -35,6 +39,5 @@ html{
 }
 
 #wrapper-titles{
-  margin-top: 200px;
-  background: black;
+  height: 100vh;
 }
