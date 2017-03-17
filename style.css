@@ -7,19 +7,29 @@ html{
   font-family: 'Cutive Mono', monospace;
 }
 
-.titles{
-  padding: 25px;
+hr {
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+    background-color: #444 !important;
+    color: dimgrey !important;
+    border: solid 1px #444 !important;
+    height: 0px !important;
+    width: 90% !important;
 }
 
-.titles h1{
-  font-size: 4.5em;
+.padded{
+  padding: 30px;
 }
 
-.titles h2{
+.vh-centered h1{
+  font-size: 3.5em;
+}
+
+.vh-centered h2{
   font-size: 2.0em;
 }
 
-#titles-and-form{
+.vh-centered{
   width: 100%;
   background:#333;
   padding: 25px;
@@ -36,8 +46,4 @@ html{
   font:14px Helvetica,Arial,sans-serif;
   width:100%;
   margin-bottom: 15px;
-}
-
-#wrapper-titles{
-  height: 100vh;
 }
