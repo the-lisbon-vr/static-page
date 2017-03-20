@@ -3,6 +3,7 @@ html{
 }
 
 *{
+  font-size: 22px;
   color: white;
   font-family: 'Cutive Mono', monospace;
 }
@@ -22,16 +23,24 @@ hr {
 }
 
 .vh-centered h1{
-  font-size: 3.5em;
+  font-size: 2.2em;
+  margin: 0px;
 }
 
 .vh-centered h2{
-  font-size: 2.0em;
+  font-size: 1.6em;
+  margin: 0px;
+
+}
+
+.vh-centered h3{
+  font-size: 1.3em;
+  margin: 0px;
+
 }
 
 .vh-centered{
   width: 100%;
-  background:#333;
   padding: 25px;
   height: 100vh;
   display: flex;
@@ -39,11 +48,67 @@ hr {
   justify-content: center;
 }
 
+.centered{
+  width: 100%;
+  padding: 25px 0px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-#mc_embed_signup{
+.bg-gray{
   background:#333;
-  clear:left;
-  font:14px Helvetica,Arial,sans-serif;
+}
+
+.bg-gray-dark{
+  background:#111;
+}
+/*-----video-------*/
+.video-container{
+  width: 100%;
+}
+
+#video-valve-demo{
+  width: 250px    !important;
+  height: auto   !important;
+}
+
+/*-----Prices and services-------*/
+
+.price-table{
+
+}
+
+.price-include{
+  padding-top: 20px;
+}
+
+/*-----Cards with examples of games available-------*/
+
+#container-games{
   width:100%;
-  margin-bottom: 15px;
+  margin: auto;
+}
+
+.games-thumbnails{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-thumbnail{
+  margin: 15px;
+  height: auto;
+  width: 0 1 auto;
+}
+
+.game-thumbnail img{
+  width: 200px;
+  height: 200px;
+}
+
+.game-thumbnail img:hover{
+  opacity: 0.4;
 }

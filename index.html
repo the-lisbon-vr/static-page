@@ -15,7 +15,7 @@
 
     <!-- Banner with title and call for action: -->
     <div class="wrapper">
-      <div class="banner vh-centered text-center">
+      <div class="banner vh-centered text-center bg-gray">
         <h1>The Lisbon VR</h1>
         <h2>Dive into virtual reality</h2>
         <h3>Coming soon. Stay tuned.</h3>
@@ -23,7 +23,7 @@
     </div>
 
     <div class="wrapper">
-      <div class="banner vh-centered text-center">
+      <div class="banner centered text-center bg-gray-dark">
 
         <!-- VR to your events: -->
         <div class="container">
@@ -31,16 +31,79 @@
           <p>Não sabe o que é realidade virtual (VR)? Veja aqui o video promocional do HTC vive, o melhor equipamento de VR da actualidade.</p>
         </div>
 
+        <!-- show small video on MOBILE: -->
+        <div class="video-container hidden-sm hidden-md hidden-lg">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/qYfNzhLXYGc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen id="video-valve-demo"></iframe>
+        </div>
+        <!-- show regular sized video on tablet and DESKTOP: -->
+        <div class="video-container hidden-xs">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/qYfNzhLXYGc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+
         <!-- Our services: -->
         <div class="container">
-          <h3>Levamos Realidade Virtual aos Seus Eventos</h3>
-          <p>Não sabe o que é realidade virtual (VR)? Veja aqui o video promocional do HTC vive, o melhor equipamento de VR da actualidade.</p>
+          <h3>Os Nossos Serviços</h3>
+          <p>Aluguer de experiências para qualquer tipo de eventos: eventos empresariais, festas, escolas, etc. </p>
+          <div class="price-table">
+            <div class="row">
+              <div class="col-xs-6 col-sm-3 col-sm-offset-3">2 horas</div>
+              <div class="col-xs-6 col-sm-3">6 horas</div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6 col-sm-3 col-sm-offset-3">€ 120</div>
+              <div class="col-xs-6 col-sm-3">€ 300</div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+                <div class="price-include text-left">
+                  <p>Os preços incluem:</p>
+                  <ul>
+                    <li>1 PC Gaming</li>
+                    <li>1 HTC Vive (óculos de VR)</li>
+                    <li>1 sistema tracking room-scale HTC</li>
+                    <li>1 membro do staff The Lisbon VR</li>
+                    <li>Acesso à nossa biblioteca de jogos</li>
+                    <li>Montagem e desmontagem do sistema</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="price-table text-left">
+          </div>
         </div>
 
         <!-- Games + Experiences -->
-        <div class="container">
-          <h3>Levamos Realidade Virtual aos Seus Eventos</h3>
-          <p>Não sabe o que é realidade virtual (VR)? Veja aqui o video promocional do HTC vive, o melhor equipamento de VR da actualidade.</p>
+        <div class="container" id="container-games">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+              <h3>Os Jogos de Maior Sucesso!</h3>
+              <p>Estes são alguns dos jogos que poderá jogar. São dos jogos de mais populares a nível mundial para o HTC Vive.</p>
+              <div class="games-thumbnails">
+
+              <!-- Thumbnails must be squares. Sized in css to 200x200: -->
+                <div class="game-thumbnail">
+                  <a href=""><img src="/images/thumb-accounting.png" alt="accounting game cover"></a>
+                </div>
+                <div class="game-thumbnail">
+                  <a href=""><img src="/images/thumb-arizona-sunshine.png" alt="arizona sunshine game cover"></a>
+                </div>
+                <div class="game-thumbnail">
+                  <a href=""><img src="/images/thumb-budget-cuts.png" alt="budget cuts game cover"></a>
+                </div>
+                <div class="game-thumbnail">
+                  <a href=""><img src="/images/thumb-recroom.png" alt="rec room game cover"></a>
+                </div>
+                <div class="game-thumbnail">
+                  <a href=""><img src="/images/thumb-thelab.png" alt="the lab game cover"></a>
+                </div>
+                <div class="game-thumbnail">
+                  <a href=""><img src="/images/thumb-trials-on-tatooine.png" alt="trials on tatooine game cover"></a>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
 
       </div>
@@ -48,8 +111,8 @@
 
     <!-- Form for reservations: -->
     <div class="wrapper">
-      <div class="banner vh-centered text-center">
-        <h1>Reservas</h1>
+      <div class="banner vh-centered text-center bg-gray">
+        <h2>Reservas</h2>
         <h2>Dive into virtual reality</h2>
         <h3>Coming soon. Stay tuned.</h3>
       </div>
