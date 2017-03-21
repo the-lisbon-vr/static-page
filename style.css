@@ -4,7 +4,7 @@ html{
 
 *{
   font-size: 22px;
-  color: white;
+  color: black;
   font-family: 'Cutive Mono', monospace;
 }
 h3, p {
@@ -21,15 +21,15 @@ hr {
     height: 0px !important;
     width: 90% !important;
 }
+.text-white{
+  color:white;
+}
+
 
 .padded{
   padding: 30px;
 }
 
-.padded-xl{
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
 
 .vh-centered h1{
   font-size: 2.2em;
@@ -57,22 +57,15 @@ hr {
   justify-content: center;
 }
 
-.centered{
-  width: 100%;
-  padding: 25px 0px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
 .bg-gray{
   background:#333;
 }
 
-.bg-gray-dark{
-  background:#111;
+.bg-gray-light{
+  background: #ccc;
 }
+
 
 
 /*-----video-------*/
