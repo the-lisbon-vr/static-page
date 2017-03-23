@@ -30,6 +30,10 @@ hr {
   padding: 30px;
 }
 
+.banner{
+  background-size: cover !important;
+  background-position: center;
+}
 
 .vh-centered h1{
   font-size: 2.2em;
@@ -59,7 +63,7 @@ hr {
 
 .centered{
   width: 100%;
-  padding: 180px 25px;
+  padding: 0px 0px;
   /*height: 100vh;*/
   display: flex;
   flex-direction: column;
@@ -78,6 +82,10 @@ hr {
 
 
 /*-----video-------*/
+#banner-to-your-events{
+  padding-top: 80px;
+}
+
 .video-container{
   width: 100%;
 }
@@ -88,9 +96,16 @@ hr {
 }
 
 /*-----Prices and services-------*/
+#banner-services{
+  padding: 50px 0px;
+}
 
 .price-table{
 
+}
+
+.fill-gray{
+  background-color: #bbb;
 }
 
 .price-include{
@@ -99,6 +114,9 @@ hr {
 
 
 /*-----Cards with examples of games available-------*/
+#banner-games-experiences{
+  padding-bottom: 80px;
+}
 
 #container-games{
   width:100%;
@@ -128,6 +146,10 @@ hr {
 }
 
 /*formspree*/
+#banner-form{
+  padding: 100px 25px;
+}
+
 .form-container{
   border-style: dashed;
 }
