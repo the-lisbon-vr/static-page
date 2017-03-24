@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>The Lisbon VR</title>
     <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Cutive+Mono' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
     <link href="style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -22,8 +23,17 @@
         <div class="padded text-white hidden-xs">
           <h2>Dive into Virtual Reality</h2>
         </div>
-        <div class="padded text-white">
+        <div class="padded text-white hidden-xs">
           <h3>Realidade virtual nos seus eventos.</h3>
+        </div>
+        <div class="padded text-white hidden-sm hidden-md hidden-lg">
+          <h4>Realidade virtual nos seus eventos.</h4>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <a href="#banner-form" id="btn-action" class="btn btn-success btn-lg">Reserve Já</a>
+          </div>
         </div>
       </div>
     </div>
@@ -34,7 +44,7 @@
         <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-              <h3>O Melhor de Outro Mundo</h3>
+              <h3><strong>O Melhor de Outro Mundo</strong></h3>
               <p><strong>Não sabe o que é realidade virtual (VR)?</strong> Veja aqui o video promocional do <strong>HTC vive</strong>, o melhor equipamento de VR da actualidade.</p>
             </div>
           </div>
@@ -56,18 +66,20 @@
         <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-              <h3>Os Nossos Serviços</h3>
-              <p><strong>Aluguer de experiências</strong> para qualquer tipo de eventos: <strong>eventos empresariais, festas, escolas</strong>, etc. </p>
+              <h3><strong>Aluguer de Experiências</strong></h3>
+              <p><strong>Podemos estar no seu próximo evento</strong>, seja ele um evento empresarial, um evento de promoção da sua marca ou uma festa de aniversário.</p>
             </div>
           </div>
           <div class="price-table">
             <div class="row">
-              <div class="col-xs-6 col-sm-3 col-sm-offset-3 fill-gray">2 horas</div>
-              <div class="col-xs-6 col-sm-3 fill-gray">6 horas</div>
-            </div>
-            <div class="row">
-              <div class="col-xs-6 col-sm-3 col-sm-offset-3 fill-gray">€ 120</div>
-              <div class="col-xs-6 col-sm-3 fill-gray">€ 300</div>
+              <div class="col-xs-6 col-sm-3 col-sm-offset-3 fill-gray">
+                <div>3 horas</div>
+                <div>€ 75</div>
+              </div>
+              <div class="col-xs-6 col-sm-3 fill-gray">
+                <div>6 horas</div>
+                <div>€ 120</div>
+              </div>
             </div>
           </div>
           <div class="row">
@@ -128,8 +140,6 @@
       </div>
     </div>
 
-
-
     <!-- Form for reservations: -->
     <div class="wrapper">
       <div id="banner-form" class="banner centered text-center text-white bg-gray" style="background-image: linear-gradient(-45deg, rgba(30,70,102,0.7), rgba(30,100,70,0.7)), url('images/rodrigo-03.png');">
@@ -146,10 +156,21 @@
               <textarea name="message" id="" cols="30" rows="10" placeholder="A sua mensagem..." class="form-field mg-left"></textarea>
               <!-- honepot to fool bots: -->
               <input type="text" name="_gotcha" style="display:none" />
-              <input type="submit" value="Enviar" class="btn btn-lg form-field">
+              <input id="btn-submit-contact" type="submit" value="Enviar" class="btn btn-lg btn-success form-field">
             </form>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div class="wrapper bg-gray">
+      <div class="footer text-center">
+        <a href="https://www.facebook.com/thelisbonvr/" target="_blank">
+          <i class="fa fa-facebook-square text-white" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.facebook.com/thelisbonvr/">
+          <h4>The Lisbon VR 2017</h4>
+        </a>
       </div>
     </div>
 

@@ -79,6 +79,17 @@ hr {
   background: #ccc;
 }
 
+#btn-action{
+  box-shadow: 5px 5px 8px 0px #111;
+  font-weight: 900;
+  opacity:0.9;
+  color: white;
+  font-size: 0.9;
+}
+#btn-action:hover{
+  box-shadow: none;
+  opacity:1;
+}
 
 
 /*-----video-------*/
@@ -166,4 +177,35 @@ hr {
   border-radius: 5px;
   opacity:0.9;
   box-shadow: 5px 5px 8px 0px #111;
+}
+
+#btn-submit-contact {
+  width: 150px;
+  font-size: 0.9em;
+  font-weight: 900;
+}
+
+/*---------------footer---------------*/
+
+.footer{
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer h4{
+  color: white;
+  margin:0px 15px;
+  padding:0px;
+}
+
+.footer a:hover{
+  text-decoration: none;
+  color: white;
+  font-weight: 900;
+}
+.footer i{
+  color:white;
+  font-size: 2em
 }
