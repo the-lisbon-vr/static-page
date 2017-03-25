@@ -4,7 +4,7 @@ html{
 
 *{
   font-size: 22px;
-  color: black;
+  color: #ddd;
   font-family: 'Cutive Mono', monospace;
 }
 h3, p {
@@ -116,7 +116,7 @@ hr {
 }
 
 .fill-gray{
-  background-color: #bbb;
+  background-color: #444;
 }
 
 .price-include{

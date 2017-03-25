@@ -10,6 +10,7 @@
     <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
     <link href="style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
   </head>
   <body>
@@ -40,7 +41,7 @@
 
     <!-- VR to your events: -->
     <div class="wrapper">
-      <div id="banner-to-your-events" class="banner centered text-center text-white bg-gray-light"">
+      <div id="banner-to-your-events" class="banner centered text-center text-white bg-gray"">
         <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-8 col-sm-offset-2">
@@ -62,7 +63,7 @@
 
     <!-- Our services: -->
     <div class="wrapper">
-      <div id="banner-services" class="banner centered text-center text-white bg-gray-light">
+      <div id="banner-services" class="banner centered text-center text-white bg-gray">
         <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-8 col-sm-offset-2">
@@ -74,7 +75,7 @@
             <div class="row">
               <div class="col-xs-6 col-sm-3 col-sm-offset-3 fill-gray">
                 <div>3 horas</div>
-                <div>€ 75</div>
+                <div>€ 80</div>
               </div>
               <div class="col-xs-6 col-sm-3 fill-gray">
                 <div>6 horas</div>
@@ -105,7 +106,7 @@
 
     <!-- Games + Experiences -->
     <div class="wrapper">
-      <div  id="banner-games-experiences"class="banner centered text-center text-white bg-gray-light">
+      <div  id="banner-games-experiences" class="banner centered text-center text-white bg-gray">
         <div class="container" id="container-games">
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-sm-offset-3">
@@ -115,22 +116,22 @@
 
               <!-- Thumbnails must be squares. Sized in css to 200x200: -->
                 <div class="game-thumbnail">
-                  <a href="#" target="_blank"><img src="images/thumb-accounting.png" alt="accounting game cover"></a>
+                  <a href="https://www.youtube.com/watch?v=sFaC-9Q-Fp8" target="_blank"><img src="images/thumb-accounting.png" alt="accounting game cover"></a>
                 </div>
                 <div class="game-thumbnail">
-                  <a href="#" target="_blank"><img src="images/thumb-arizona-sunshine.png" alt="arizona sunshine game cover"></a>
+                  <a href="https://www.youtube.com/watch?v=l_gWDl_f6V8" target="_blank"><img src="images/thumb-arizona-sunshine.png" alt="arizona sunshine game cover"></a>
                 </div>
                 <div class="game-thumbnail">
-                  <a href="#" target="_blank"><img src="images/thumb-budget-cuts.png" alt="budget cuts game cover"></a>
+                  <a href="https://www.youtube.com/watch?v=gbp7xX9QPOc&t=6s" target="_blank"><img src="images/thumb-budget-cuts.png" alt="budget cuts game cover"></a>
                 </div>
                 <div class="game-thumbnail">
-                  <a href="#" target="_blank"><img src="images/thumb-recroom.png" alt="rec room game cover"></a>
+                  <a href="https://www.youtube.com/watch?v=c1J7GeqraRE&t=29s" target="_blank"><img src="images/thumb-recroom.png" alt="rec room game cover"></a>
                 </div>
                 <div class="game-thumbnail">
-                  <a href="#" target="_blank"><img src="images/thumb-thelab.png" alt="the lab game cover"></a>
+                  <a href="https://www.youtube.com/watch?v=ASVku-48N8Q" target="_blank"><img src="images/thumb-thelab.png" alt="the lab game cover"></a>
                 </div>
                 <div class="game-thumbnail">
-                  <a href="#" target="_blank"><img src="images/thumb-trials-on-tatooine.png" alt="trials on tatooine game cover"></a>
+                  <a href="https://www.youtube.com/watch?v=ZDDr6KjSpAY" target="_blank"><img src="images/thumb-trials-on-tatooine.png" alt="trials on tatooine game cover"></a>
                 </div>
               </div>
 
@@ -152,6 +153,7 @@
               <input type="hidden" name="_next" value="/the-lisbon-vr/thanks.html" />
               <input type="hidden" name="_subject" value="New submission!" />
               <input id="name" type="text" name="name" placeholder="Nome (primeiro e último)" class="form-field">
+              <input id="phone-number" type="text" name="phone-number" placeholder="Telemóvel" class="form-field">
               <input type="text" name="_replyto" placeholder="exemplo@email.com" class="form-field"/>
               <textarea name="message" id="" cols="30" rows="10" placeholder="A sua mensagem..." class="form-field mg-left"></textarea>
               <!-- honepot to fool bots: -->
@@ -176,5 +178,17 @@
 
 
   </body>
+
+  <script>
+    $(document).on('click', '#btn-action', function(event){
+      event.preventDefault();
+
+      // smooth scrolling to the form:
+      $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+      }, 1000);
+
+    });
+  </script>
 </html>
 
